@@ -9,7 +9,7 @@ Package.describe({
 Package.onUse(function (api, where) {
     api.versionsFrom('0.9.3');
 
-    api.use('coffeescript');
+    api.use('coffeescript@2.0.0');
     api.use('practicalmeteor:chai@2.1.0_1');
 
     api.addFiles('sinon-1.14.1.js');
@@ -22,7 +22,7 @@ Package.onUse(function (api, where) {
 });
 
 Package.onTest(function(api) {
-  api.use(['practicalmeteor:chai@2.1.0_1', 'practicalmeteor:sinon@1.14.1_2', 'coffeescript', 'tinytest']);
+  api.use(['practicalmeteor:chai@2.1.0_1', 'practicalmeteor:sinon@1.14.1_2', 'coffeescript@2.0.0', 'tinytest']);
 
   api.addFiles('tests/HelpersTest.coffee');
 });
